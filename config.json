@@ -1,0 +1,27 @@
+
+{
+  "subscriptionId": "4a1b6fda-1424-48ff-858c-20dbcfbb0131",
+  "resourceGroup": "rg-msft-test-3",
+  "location": "germanywestcentral",
+  "vmCount": 2,
+  "vmNamePrefix": "vm-backup-test",
+  "vmStartNumber": 1,
+  "vmConfig": {
+    "image": "Ubuntu2404",
+    "adminUsername": "azureuser",
+    "size": "Standard_D2alds_v6"
+  },
+  "vaultName": "vault-wim-3",
+  "policyName": "EnhancedPolicy-wim-3",
+  "backupRetainUntil": "31-12-2025",
+  "reportPath": ".\\BackupReport.csv",
+  "emailConfig": {
+    "enabled": true,
+    "senderAddress": "DoNotReply@043ba713-bad9-497f-9ec0-cfc9ff2f560f.eu2.azurecomm.net",
+    "toEmails": [
+      "wauters1978@gmail.com",
+      "wimwauters@microsoft.com"
+    ],
+    "subject": "Azure Backup Report - {{DATE}}"
+  }
+}
