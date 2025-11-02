@@ -14,14 +14,5 @@
   "vaultName": "vault-wim-3",
   "policyName": "EnhancedPolicy-wim-3",
   "backupRetainUntil": "31-12-2025",
-  "reportPath": ".\\BackupReport.csv",
-  "emailConfig": {
-    "enabled": true,
-    "senderAddress": "DoNotReply@043ba713-bad9-497f-9ec0-cfc9ff2f560f.eu2.azurecomm.net",
-    "toEmails": [
-      "wauters1978@gmail.com",
-      "wimwauters@microsoft.com"
-    ],
-    "subject": "Azure Backup Report - {{DATE}}"
-  }
+  "reportPath": ".\\BackupReport.csv"
 }
