@@ -97,9 +97,11 @@ Edit `config.json` to match your environment:
 
 **Output**: Creates `BackupReport.csv` with detailed backup information for all protected VMs.
 
+**📊 Excel Integration**: The generated CSV file can be directly imported into Microsoft Excel for advanced analysis, filtering, and visualization of your backup data.
+
 ## 📊 Report Contents
 
-The generated CSV report includes:
+The generated CSV report includes comprehensive backup information that can be **imported directly into Microsoft Excel** for analysis:
 
 | Column | Description |
 |--------|-------------|
@@ -198,7 +200,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - **Create.ps1** is primarily for **testing/demo purposes** - it creates billable Azure resources
 - **Report.ps1** is for **production monitoring** - it only reads existing backup data
 - The scripts use Azure CLI for authentication and API calls
-- Reports are generated in CSV format for easy analysis in Excel or other tools
+- Reports are generated in **CSV format for easy import into Microsoft Excel** or other spreadsheet applications
 - All timestamps are formatted as dd-MM-yyyy - HH:mm:ss for consistency
 
 ## 🤝 Contributing
@@ -208,3 +210,20 @@ Feel free to submit issues, fork the repository, and create pull requests for an
 ## 📄 License
 
 This project is provided as-is for educational and testing purposes.
+
+## ⚠️ Disclaimer
+
+**IMPORTANT**: Although these scripts have been tested, they are **NOT recommended for use in production environments** without thorough testing and validation in your specific environment.
+
+**No Warranty**: This software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+
+**No Responsibility**: The authors and contributors of this project take **no responsibility** for any damage, data loss, service interruptions, or other issues that may arise from the use of these scripts. Use at your own risk.
+
+**Production Use**: Before using these scripts in any production environment:
+- Thoroughly test in a non-production environment
+- Review and understand all code before execution
+- Ensure proper backup and recovery procedures are in place
+- Validate compatibility with your specific Azure environment and policies
+- Consider having the scripts reviewed by your IT security and operations teams
+
+**Your Responsibility**: It is your responsibility to ensure these scripts are suitable for your environment and comply with your organization's policies and procedures.
